@@ -43,9 +43,17 @@ public class Lotto {
         }
     }
 
+    public int countMatch(Lotto other) {
+        return (int) numbers.stream()
+                .filter(other.numbers::contains)
+                .count();
+    }
+
+    public boolean contains(int number) {
+        return numbers.contains(number);
+    }
+
     public List<Integer> getNumbers() {
         return numbers;
     }
-
-    // TODO: 당첨 번호와 비교하는 메서드 추가
 }
