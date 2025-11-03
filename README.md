@@ -24,7 +24,7 @@
     - validate : 로또 번호가 1~45 범위를 벗어날 경우 IllegalArgumentException 발생
     - validate : 로또 번호에 중복된 숫자가 있을 경우 IllegalArgumentException 발생
 
-- [ ] 당첨 번호 및 보너스 번호 처리
+- [x] 당첨 번호 및 보너스 번호 처리
     - 입력받은 당첨 번호(쉼표 구분 문자열)를 List<Integer> 로 파싱한다.
     - 당첨 번호 유효성 검사 (6개, 1~45 범위, 중복 없음) 후 Lotto 객체 또는 별도 클래스로 관리한다.
     - 입력받은 보너스 번호를 int 로 파싱한다.
