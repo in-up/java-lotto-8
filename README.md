@@ -17,7 +17,7 @@
     - 구매 수량만큼 camp.nextstep.edu.missionutils.Randoms.pickUniqueNumbersInRange(1, 45, 6)를 호출하여 로또를 발급한다.
     - 발급받은 번호로 Lotto 객체를 생성하여 리스트에 저장한다.
 
-- [ ] Lotto 클래스 구현
+- [x] Lotto 클래스 구현
     - 제공된 Lotto 클래스를 활용한다.
     - 생성자에서 validate 메서드를 호출한다.
     - validate : 번호 개수가 6개가 아닐 경우 IllegalArgumentException 발생
