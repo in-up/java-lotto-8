@@ -32,6 +32,12 @@ public class WinningNumbers {
         }
     }
 
+    public Rank calculateRank(Lotto lotto) {
+        int matchCount = winningLotto.countMatch(lotto);
+        boolean matchBonus = lotto.contains(bonusNumber);
+        return Rank.of(matchCount, matchBonus);
+    }
+
     public Lotto getWinningLotto() {
         return winningLotto;
     }
@@ -39,6 +45,4 @@ public class WinningNumbers {
     public int getBonusNumber() {
         return bonusNumber;
     }
-
-    // TODO: 로또와 비교하여 당첨등수 판별하기
 }
